@@ -2,7 +2,7 @@
 
 ## Let's use AnimeGANv3 to produce our own animation.    
 
-**Inference pipeline**  
+**Training pipeline**  
 
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_pipeline.jpg)   
 
