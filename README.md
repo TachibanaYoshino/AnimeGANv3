@@ -4,7 +4,7 @@
 
 **Inference pipeline**  
 
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_pipeline.png)   
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_pipeline.jpg)   
 
 ## Usage  
 
