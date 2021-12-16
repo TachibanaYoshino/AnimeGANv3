@@ -4,11 +4,11 @@
 
 **Inference pipeline**  
 
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/concat/AnimeGANv3_pipeline.png)   
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_pipeline.png)   
 
 ## Usage  
 
-Download this repository and use AnimeGANv3's graphical user interface program to turn your photos or videos into anime.**(tbd)**  
+Download this repository and use AnimeGANv3's graphical user interface program to turn your photos or videos into anime. **(It will be released on Christmas day.)**  
 
 ____
 ## Results  
