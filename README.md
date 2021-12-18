@@ -8,10 +8,15 @@
 
 ## Usage  
 
-Download this repository and use AnimeGANv3's graphical user interface program to turn your photos or videos into anime. **(It will be released on Christmas day.)**  
+Download this repository and use AnimeGANv3's graphical user interface program (AnimeGANv3.exe) and pre-trained models (onnx.zip) to turn your photos or videos into anime. **(It will be released on Christmas day.)**  
 
+## Demo Video 
+[video 1 ](https://github.com/TachibanaYoshino/AnimeGANv3/releases/tag/v1.0)  
+[video 2 ](https://github.com/TachibanaYoshino/AnimeGANv3/releases/tag/v1.0.1)  
+[video 3 ](https://github.com/TachibanaYoshino/AnimeGANv3/releases/tag/v1.0.2)  
+Download it, you can share these created anime videos with anyone anywhere.  
 ____
-## Results  
+## Photo Results  
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/concat/32.jpg)   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/concat/30.jpg)   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/concat/29.jpg)   
@@ -24,6 +29,6 @@ ____
  
 
 ## License  
-This repo is made freely available to academic and non-academic entities for non-commercial purposes such as academic research, teaching, scientific publications. Permission is granted to use the AnimeGANv3 given that you agree to my license terms.
+This repo is made freely available to academic and non-academic entities for non-commercial purposes such as academic research, teaching, scientific publications. Permission is granted to use the AnimeGANv3 given that you agree to my license terms. Regarding the request for commercial use, please contact us via email to help you obtain the authorization letter.
 ## Author  
 Asher Chan 
