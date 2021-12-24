@@ -11,10 +11,10 @@
 Download this repository and use AnimeGANv3's graphical user interface program (AnimeGANv3.exe) and pre-trained models (onnx.zip) to turn your photos or videos into anime. **(It will be released on Christmas day.)**  
 
 ## Demo Video 
-[video 1 ](https://github.com/TachibanaYoshino/AnimeGANv3/releases/tag/v1.0)  
-[video 2 ](https://github.com/TachibanaYoshino/AnimeGANv3/releases/tag/v1.0.1)  
-[video 3 ](https://github.com/TachibanaYoshino/AnimeGANv3/releases/tag/v1.0.2)  
-Download it, you can share these created anime videos with anyone anywhere.  
+video 1 [Download 1080p ](https://github.com/TachibanaYoshino/AnimeGANv3/releases/tag/v1.0) or [Watch it online](https://b23.tv/FgJfUek)  
+video 2 [Download 1080p ](https://github.com/TachibanaYoshino/AnimeGANv3/releases/tag/v1.0.1) or [Watch it online](https://b23.tv/us66bFI)  
+video 3 [Download 1080p ](https://github.com/TachibanaYoshino/AnimeGANv3/releases/tag/v1.0.2) or [Watch it online](https://b23.tv/u78xSms)  
+  
 ____
 ## Photo Results  
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/concat/32.jpg)   
