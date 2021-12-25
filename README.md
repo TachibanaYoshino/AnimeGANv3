@@ -1,6 +1,10 @@
 # AnimeGANv3   
 
-## Let's use AnimeGANv3 to produce our own animation.    
+## Let's use AnimeGANv3 to produce our own animation.  
+
+**Updates**  
+* `2021-12-25` The paper of AnimeGANv3 will be released in 2022.:christmas_tree:  
+---------  
 
 **Training pipeline**  
 
@@ -8,7 +12,7 @@
 
 ## Usage  
 
-Download this repository and use AnimeGANv3's graphical user interface program (AnimeGANv3.exe) and pre-trained models (onnx.zip) to turn your photos or videos into anime. **(It will be released on Christmas day.)**  
+Without installing any other dependencies, download this repository and use AnimeGANv3's graphical user interface program (AnimeGANv3.exe) and pre-trained models (onnx.zip) to turn your photos or videos into anime.:blush:   
 
 ## Demo Video 
 video 1 [Download 1080p ](https://github.com/TachibanaYoshino/AnimeGANv3/releases/tag/v1.0) or [Watch it online](https://b23.tv/FgJfUek)  
