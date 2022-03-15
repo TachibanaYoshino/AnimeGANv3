@@ -6,10 +6,6 @@
 * `2021-12-25` The paper of AnimeGANv3 will be released in 2022.:christmas_tree:  
 ---------  
 
-**Training pipeline**  
-
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_pipeline.jpg)   
-
 ## Usage  
 
 Without installing any other dependencies, download this repository and use AnimeGANv3's graphical user interface program (AnimeGANv3.exe) and pre-trained models (onnx.zip) to turn your photos or videos into anime.:blush:   
