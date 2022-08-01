@@ -1,10 +1,11 @@
 # AnimeGANv3   
 
-### If you like what I'm doing you can tip me on [patreon](https://www.patreon.com/Asher_Chan).    
+### If you like what I'm doing you can tip me on [*patreon*](https://www.patreon.com/Asher_Chan).    
 ## Let's use AnimeGANv3 to produce our own animation.  
 
 **Updates**  
-* `2022-07-13` Added [colab](https://colab.research.google.com/drive/1XYNWwM8Xq-U7KaTOqNap6A-Yq1f-V-FB?usp=sharing) for face to portrait sketch.
+* `2022-08-01` Added a new AnimeGANv3 model $\color{#FF6A6A}{(Colab)}$ for Face to [Arcane](https://www.netflix.com/sg/title/81435684) style.    
+* `2022-07-13` Added a new AnimeGANv3 model [**(Colab)**](https://colab.research.google.com/drive/1XYNWwM8Xq-U7KaTOqNap6A-Yq1f-V-FB?usp=sharing) for face to portrait sketch.
 * `2021-12-25` The paper of AnimeGANv3 will be released in 2022.:christmas_tree:  
 ---------  
 
@@ -29,6 +30,12 @@ ____
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/concat/34.jpg)   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/concat/26.jpg)   
     
+    
+### Face to Arcane style   
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Arcane/AnimeGANv3_Arcane.gif)     
+      
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Arcane/AnimeGANv3_Arcane.jpg)   
+      
 ### Face to portrait sketch   
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XYNWwM8Xq-U7KaTOqNap6A-Yq1f-V-FB?usp=sharing)     
       
