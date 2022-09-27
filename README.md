@@ -4,6 +4,7 @@
 ## Let's use AnimeGANv3 to produce our own animation.  
 
 **Updates**  
+* `2021-09-26` [Official online demo](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3) is integrated to [Huggingface Spaces](https://huggingface.co/spaces) with [Gradio](https://github.com/gradio-app/gradio). [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3)     
 * `2022-09-24` Added a new great AnimeGANv3 onnx model [**(Colab)**](https://www.patreon.com/posts/released-onnx-to-72379845?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator) for Face to USA cartoon Style.    
 * `2022-09-18` Update a new AnimeGANv3 onnx model [**(Colab)**](https://www.patreon.com/posts/colab-of-with-72136496?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator) for Photo to Hayao Style.    
 * `2022-08-01` Added a new AnimeGANv3 onnx model [**(Colab)**](https://www.patreon.com/posts/new-animeganv3-69895469?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator) for Face to [Arcane](https://www.netflix.com/sg/title/81435684) style.    
@@ -13,7 +14,10 @@
 
 ## Usage  
 
-Without installing any other dependencies, download this repository and use AnimeGANv3's graphical user interface program (AnimeGANv3.exe) and pre-trained models (onnx.zip) to turn your photos or videos into anime.:blush:   
+* Without installing any other dependencies, download this repository and use AnimeGANv3's graphical user interface program (AnimeGANv3.exe) and pre-trained models (onnx.zip) to turn your photos or videos into anime.:blush:   
+
+*  Official online demo is released in [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3).      
+
 
 ## Demos 
 ### :mount_fuji: Video to anime (Hayao Style)   
