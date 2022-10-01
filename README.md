@@ -4,6 +4,7 @@
 ## Let's use AnimeGANv3 to produce our own animation.  
 
 **Updates**  
+* `2021-10-01` The paper of AnimeGANv3 will be released in 2023. Maybe in May.    
 * `2021-09-26` [Official online demo](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3) is integrated to [Huggingface Spaces](https://huggingface.co/spaces) with [Gradio](https://github.com/gradio-app/gradio). [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3)     
 * `2022-09-24` Added a new great AnimeGANv3 onnx model [**(Colab)**](https://www.patreon.com/posts/released-onnx-to-72379845?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator) for Face to USA cartoon Style.    
 * `2022-09-18` Update a new AnimeGANv3 onnx model [**(Colab)**](https://www.patreon.com/posts/colab-of-with-72136496?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator) for Photo to Hayao Style.    
