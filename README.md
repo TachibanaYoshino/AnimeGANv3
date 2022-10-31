@@ -4,6 +4,7 @@
 ## Let's use AnimeGANv3 to produce our own animation.  
 
 **Updates**  
+* `2022-10-31` Added a new AnimeGANv3 onnx model [**(Colab)**](https://www.patreon.com/posts/preview-brings-73924750?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator) for Face to USA cartoon and Disney style **V1.0**. :jack_o_lantern:    
 * `2022-10-07` The USA cartoon Style of AnimeGANv3 is integrated to [*ProfileProfile*](https://apps.apple.com/in/app/profileprofile/id1636884362
 ) with [Core ML](https://developer.apple.com/documentation/coreml). Install it by the Apple Store and have a try.       
 * `2022-10-01` The paper of AnimeGANv3 will be released in 2023. Maybe in May.    
@@ -64,9 +65,24 @@ ___
        
 ___    
 ### :art: Face to USA style or Trump style ? 
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_USA_Trump/AnimeGANv3_USA_Trump.gif)     
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_USA/AnimeGANv3_USA_Trump.gif)     
       
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_USA_Trump/output.jpg)   
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_USA/output.jpg)  
+
+
+___    
+### :art: Face to USA cartoon or Disney style    
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Trump/AnimeGANv3_Trump_2pic.gif)     
+      
+<details>
+<summary><strong>   more surprise</strong>&emsp;:point_left:</summary>    
+
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Trump/AnimeGANv3_Trump_1pic.gif) 
+      
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Trump/Trump_output.jpg)      
+  
+</details> 
+      
       
 ___    
 ### :art: Face to Arcane style   
