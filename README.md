@@ -1,16 +1,15 @@
 # AnimeGANv3   
-
-### If you like what I'm doing you can tip me on [*patreon*](https://www.patreon.com/Asher_Chan). :trophy:    
+  
 ## Let's use AnimeGANv3 to produce our own animation.  
 
 **Updates**  
-* `2022-10-31` Added a new AnimeGANv3 onnx model [**(Colab)**](https://www.patreon.com/posts/preview-brings-73924750?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator) for Face to USA cartoon and Disney style **V1.0**. :jack_o_lantern:    
+* `2022-10-31` Added a new AnimeGANv3 model for Face to USA cartoon and Disney style **V1.0**. :jack_o_lantern:    
 * `2022-10-07` The USA cartoon Style of AnimeGANv3 is integrated to [*ProfileProfile*](https://apps.apple.com/in/app/profileprofile/id1636884362
 ) with [Core ML](https://developer.apple.com/documentation/coreml). Install it by the Apple Store and have a try.       
 * `2022-10-01` The paper of AnimeGANv3 will be released in 2023. Maybe in May.    
 * `2022-09-26` [Official online demo](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3) is integrated to [Huggingface Spaces](https://huggingface.co/spaces) with [Gradio](https://github.com/gradio-app/gradio). [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3)     
-* `2022-09-24` Added a new great AnimeGANv3 onnx model [**(Colab)**](https://www.patreon.com/posts/released-onnx-to-72379845?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator) for Face to USA cartoon Style.    
-* `2022-09-18` Update a new AnimeGANv3 onnx model [**(Colab)**](https://www.patreon.com/posts/colab-of-with-72136496?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator) for Photo to Hayao Style.    
+* `2022-09-24` Added a new great AnimeGANv3 model for Face to USA cartoon Style.    
+* `2022-09-18` Update a new AnimeGANv3 model for Photo to Hayao Style.    
 * `2022-08-01` Added a new AnimeGANv3 onnx model [**(Colab)**](https://www.patreon.com/posts/new-animeganv3-69895469?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator) for Face to [Arcane](https://www.netflix.com/sg/title/81435684) style.    
 * `2022-07-13` Added a new AnimeGANv3 onnx model [**(Colab)**](https://colab.research.google.com/drive/1XYNWwM8Xq-U7KaTOqNap6A-Yq1f-V-FB?usp=sharing) for Face to portrait sketch.
 * `2021-12-25` The paper of AnimeGANv3 will be released in 2022.:christmas_tree:  
@@ -71,7 +70,7 @@ ___
 
 
 ___    
-### :art: Face to USA cartoon or Disney style    
+### :art: Face to USA cartoon + Disney style    
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Trump/AnimeGANv3_Trump_2pic.gif)     
       
 <details>
