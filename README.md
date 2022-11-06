@@ -3,8 +3,9 @@
 ## Let's use AnimeGANv3 to produce our own animation.  
 
 **Updates**  
+* `2022-11-06` Added a new AnimeGANv3 model for Face to Disney style **V1.0**. :european_castle:     
 * `2022-10-31` Added a new AnimeGANv3 model for Face to USA cartoon and Disney style **V1.0**. :jack_o_lantern:    
-* `2022-10-07` The USA cartoon Style of AnimeGANv3 is integrated to [*ProfileProfile*](https://apps.apple.com/in/app/profileprofile/id1636884362
+* `2022-10-07` The USA cartoon Style of AnimeGANv3 is integrated to [**ProfileProfile**](https://apps.apple.com/in/app/profileprofile/id1636884362
 ) with [Core ML](https://developer.apple.com/documentation/coreml). Install it by the Apple Store and have a try.       
 * `2022-10-01` The paper of AnimeGANv3 will be released in 2023. Maybe in May.    
 * `2022-09-26` [Official online demo](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3) is integrated to [Huggingface Spaces](https://huggingface.co/spaces) with [Gradio](https://github.com/gradio-app/gradio). [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3)     
@@ -63,15 +64,23 @@ ___
 </details>   
        
 ___    
-### :art: Face to USA style or Trump style ? 
+### :art: Face to USA cartoon style     
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_USA/AnimeGANv3_USA_Trump.gif)     
       
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_USA/output.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_USA/output.jpg)    
+
+___    
+### :art: Face to Disney cartoon style     
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Disney/pic.gif)     
+      
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Disney/output.jpg)  
 
 
 ___    
 ### :art: Face to USA cartoon + Disney style    
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Trump/AnimeGANv3_Trump_2pic.gif)     
+      
+<a href="https://youtu.be/vJqQQMRYKh0"><img src="https://img.shields.io/static/v1?label=YouTube&message=AnimeGANv3_Trump style v1.5 &color=gold"/></a>
       
 <details>
 <summary><strong>   more surprise</strong>&emsp;:point_left:</summary>    
