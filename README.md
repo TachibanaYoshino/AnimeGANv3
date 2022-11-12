@@ -18,13 +18,16 @@
 
 ## Usage  
 
-* Without installing any other dependencies, download this repository and use AnimeGANv3's graphical user interface program (AnimeGANv3.exe) and pre-trained models (onnx.zip) to turn your photos or videos into anime.:blush:   
-
+*  Access anytime on your phone. :iphone:       
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_phone_code.png)     
+       
 *  Official online demo is released in [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3).      
+       
+* Without installing any other dependencies, download this repository and use AnimeGANv3's graphical user interface program (AnimeGANv3.exe) and pre-trained models (onnx.zip) to turn your photos or videos into anime.:blush:   
 
 
 ## Demos 
-### :mount_fuji: Video to anime (Hayao Style)   
+### :fire: Video to anime (Hayao Style)   
 <p>
 <a href="https://youtu.be/EosubeJmAnE"><img src="https://img.shields.io/static/v1?label=YouTube&message=video 1&color=red"/></a>
 <a href="https://youtu.be/5qLUflWb45E"><img src="https://img.shields.io/static/v1?label=YouTube&message=video 2&color=green"/></a>
