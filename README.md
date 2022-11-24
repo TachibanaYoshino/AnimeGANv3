@@ -3,6 +3,7 @@
 ## Let's use AnimeGANv3 to produce our own animation.  
 
 **Updates**  
+* `2022-11-24` Added a new AnimeGANv3 model for Face to Nordic myth style. 🦃      
 * `2022-11-06` Added a new AnimeGANv3 model for Face to Disney style **V1.0**. :european_castle:     
 * `2022-10-31` Added a new AnimeGANv3 model for Face to USA cartoon and Disney style **V1.0**. :jack_o_lantern:    
 * `2022-10-07` The USA cartoon Style of AnimeGANv3 is integrated to [**ProfileProfile**](https://apps.apple.com/in/app/profileprofile/id1636884362
@@ -100,8 +101,14 @@ ___
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Arcane/AnimeGANv3_Arcane.gif)     
       
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Arcane/AnimeGANv3_Arcane.jpg)   
+        
+___    
+### :art: Face to Nordic myth style   
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Nordic_myth/pic.gif)     
       
-___     
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Nordic_myth/AnimeGANv3_Nordic_myth.jpg)    
+___      
+
 ### :art: Face to portrait sketch   
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XYNWwM8Xq-U7KaTOqNap6A-Yq1f-V-FB?usp=sharing)     
       
@@ -120,6 +127,10 @@ ___
 ___     
 
 ## License  
-This repo is made freely available to academic and non-academic entities for non-commercial purposes such as academic research, teaching, scientific publications. Permission is granted to use the AnimeGANv3 given that you agree to my license terms. Regarding the request for commercial use, please contact us via email to help you obtain the authorization letter.
+This repo is made freely available to academic and non-academic entities for non-commercial purposes such as academic research, teaching, scientific publications. Permission is granted to use the AnimeGANv3 given that you agree to my license terms. Regarding the request for commercial use, please contact us via email to help you obtain the authorization letter.    
+
 ## Author  
 Asher Chan 
+    
+## Acknowledgment   
+Thanks to the friend from California for the Nordic myth style data.
