@@ -32,7 +32,7 @@
 <p>
 <a href="https://youtu.be/EosubeJmAnE"><img src="https://img.shields.io/static/v1?label=YouTube&message=video 1&color=red"/></a>
 <a href="https://youtu.be/5qLUflWb45E"><img src="https://img.shields.io/static/v1?label=YouTube&message=video 2&color=green"/></a>
-<a href="https://youtu.be/0KaScDxgyBw"><img src="https://img.shields.io/static/v1?label=YouTube&message=video 3&color=pink"/></a>
+<a href="https://www.youtube.com/watch?v=iFjiaPlhVm4"><img src="https://img.shields.io/static/v1?label=YouTube&message=video 3&color=pink"/></a>
 </p>
 
   
