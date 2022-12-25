@@ -3,6 +3,7 @@
 ## Let's use AnimeGANv3 to produce our own animation.  
 
 **Updates**  
+* `2022-12-25` Added the tiny model (2.4MB) of [Nordic myth style](https://drive.google.com/file/d/1kDYiJQC-T8vsHq-GBiBgCInpW3ozX1FN/view?usp=sharing) and USA style 2.0. It can go upto 50 FPS on iphone14 with 512*512 input. :santa:       
 * `2022-11-24` Added a new AnimeGANv3 model for Face to Nordic myth style. 🦃      
 * `2022-11-06` Added a new AnimeGANv3 model for Face to Disney style **V1.0**. :european_castle:     
 * `2022-10-31` Added a new AnimeGANv3 model for Face to USA cartoon and Disney style **V1.0**. :jack_o_lantern:    
