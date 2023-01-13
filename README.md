@@ -3,8 +3,9 @@
 ## Let's use AnimeGANv3 to produce our own animation.  
 
 **Updates**  
-* `2022-12-25` Added the tiny model (2.4MB) of [Nordic myth style](https://drive.google.com/file/d/1kDYiJQC-T8vsHq-GBiBgCInpW3ozX1FN/view?usp=sharing) and USA style 2.0. It can go upto 50 FPS on iphone14 with 512*512 input. :santa:       
-* `2022-11-24` Added a new AnimeGANv3 model for Face to Nordic myth style. 🦃      
+* `2023-01-13` Added a new AnimeGANv3 model for Face to comic style.     
+* `2022-12-25` Added the tiny model (2.4MB) of [~~Nordic myth style~~]() and USA style 2.0. It can go upto 50 FPS on iphone14 with 512*512 input. :santa:       
+* `2022-11-24` ~~Added a new AnimeGANv3 model for Face to Nordic myth style.~~ 🦃      
 * `2022-11-06` Added a new AnimeGANv3 model for Face to Disney style **V1.0**. :european_castle:     
 * `2022-10-31` Added a new AnimeGANv3 model for Face to USA cartoon and Disney style **V1.0**. :jack_o_lantern:    
 * `2022-10-07` The USA cartoon Style of AnimeGANv3 is integrated to [**ProfileProfile**](https://apps.apple.com/in/app/profileprofile/id1636884362
@@ -104,10 +105,10 @@ ___
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Arcane/AnimeGANv3_Arcane.jpg)   
         
 ___    
-### :art: Face to Nordic myth style   
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Nordic_myth/pic.gif)     
+### :art: Face to comic style   
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_comic/AnimeGANv3_comic.gif)     
       
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Nordic_myth/AnimeGANv3_Nordic_myth.jpg)    
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_comic/AnimeGANv3_comic.jpg)    
 ___      
 
 ### :art: Face to portrait sketch   
@@ -133,5 +134,3 @@ This repo is made freely available to academic and non-academic entities for non
 ## Author  
 Asher Chan 
     
-## Acknowledgment   
-Thanks to the friend from California for the Nordic myth style data.
