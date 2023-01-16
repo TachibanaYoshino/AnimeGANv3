@@ -3,6 +3,7 @@
 ## Let's use AnimeGANv3 to produce our own animation.  
 
 **Updates**  
+* `2023-01-16` Added a new AnimeGANv3-photo.exe for the inference of AnimeGANv3's onnx model.     
 * `2023-01-13` Added a new AnimeGANv3 model for Face to comic style.     
 * `2022-12-25` Added the tiny model (2.4MB) of [~~Nordic myth style~~]() and USA style 2.0. It can go upto 50 FPS on iphone14 with 512*512 input. :santa:       
 * `2022-11-24` ~~Added a new AnimeGANv3 model for Face to Nordic myth style.~~ 🦃      
