@@ -3,6 +3,7 @@
 ## Let's use AnimeGANv3 to produce our own animation.  
 
 **Updates**  
+* `2023-09-18` Added a new AnimeGANv3 model for Face to Kpop style.     
 * `2023-01-16` Added a new AnimeGANv3-photo.exe for the inference of AnimeGANv3's onnx model.     
 * `2023-01-13` Added a new AnimeGANv3 model for Face to comic style.     
 * `2022-12-25` Added the tiny model (2.4MB) of [~~Nordic myth style~~]() and USA style 2.0. It can go upto 50 FPS on iphone14 with 512*512 input. :santa:       
@@ -10,8 +11,7 @@
 * `2022-11-06` Added a new AnimeGANv3 model for Face to Disney style **V1.0**. :european_castle:     
 * `2022-10-31` Added a new AnimeGANv3 model for Face to USA cartoon and Disney style **V1.0**. :jack_o_lantern:    
 * `2022-10-07` The USA cartoon Style of AnimeGANv3 is integrated to [**ProfileProfile**](https://apps.apple.com/in/app/profileprofile/id1636884362
-) with [Core ML](https://developer.apple.com/documentation/coreml). Install it by the Apple Store and have a try.       
-* `2022-10-01` The paper of AnimeGANv3 will be released in 2023. Maybe in May.    
+) with [Core ML](https://developer.apple.com/documentation/coreml). Install it by the Apple Store and have a try.
 * `2022-09-26` [Official online demo](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3) is integrated to [Huggingface Spaces](https://huggingface.co/spaces) with [Gradio](https://github.com/gradio-app/gradio). [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3)     
 * `2022-09-24` Added a new great AnimeGANv3 model for Face to USA cartoon Style.    
 * `2022-09-18` Update a new AnimeGANv3 model for Photo to Hayao Style.    
@@ -111,6 +111,13 @@ ___
       
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_comic/AnimeGANv3_comic.jpg)    
 ___      
+
+___    
+### :art: Face to Kpop style   
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Kpop/AnimeGANv3_Kpop.gif)     
+      
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Kpop/AnimeGANv3_Kpop.jpg)    
+___  
 
 ### :art: Face to portrait sketch   
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XYNWwM8Xq-U7KaTOqNap6A-Yq1f-V-FB?usp=sharing)     
