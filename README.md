@@ -3,6 +3,7 @@
 ## Let's use AnimeGANv3 to produce our own animation.  
 
 **Updates**  
+* `2023-10-31` Added three new styles of AnimeGANv3: Portrait  to Cute, 8bit and Sketch-0 style. :ghost:    
 * `2023-09-18` Added a new AnimeGANv3 model for Face to Kpop style.     
 * `2023-01-16` Added a new AnimeGANv3-photo.exe for the inference of AnimeGANv3's onnx model.     
 * `2023-01-13` Added a new AnimeGANv3 model for Face to comic style.     
@@ -20,10 +21,7 @@
 * `2021-12-25` The paper of AnimeGANv3 will be released in 2022.:christmas_tree:  
 ---------  
 
-## Usage  
-
-*  Access anytime on your phone. :iphone:       
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_phone_code.png)     
+## Usage
        
 *  Official online demo is released in [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3).      
        
@@ -107,16 +105,32 @@ ___
 ### :art: Face to comic style   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_comic/AnimeGANv3_comic.gif)     
       
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_comic/AnimeGANv3_comic.jpg)    
-___      
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_comic/AnimeGANv3_comic.jpg)     
 
 ___    
 ### :art: Face to Kpop style   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Kpop/AnimeGANv3_Kpop.gif)     
       
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Kpop/AnimeGANv3_Kpop.jpg)    
-___  
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Kpop/AnimeGANv3_Kpop.jpg)     
 
+___    
+### :art: Face to Cute style   
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Cute/AnimeGANv3_Cute.gif)     
+      
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Cute/AnimeGANv3_Cute.jpg)    
+
+___    
+### :art: Face to 8bit style   
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_8bit/AnimeGANv3_8bit.gif)     
+      
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_8bit/AnimeGANv3_8bit.jpg)    
+
+___    
+### :art: Face to Sketch-0 style    
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Sketch-0/AnimeGANv3_Sketch-0.jpg)  
+
+
+___ 
 ### :art: Face to portrait sketch   
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XYNWwM8Xq-U7KaTOqNap6A-Yq1f-V-FB?usp=sharing)     
       
