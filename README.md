@@ -2,10 +2,10 @@
 
 Paper Title: A Novel Double-Tail Generative Adversarial Network for Fast Photo Animation.
 ## Let's use AnimeGANv3 to produce our own animation.
-
+<!--
 <div style="display:none">
 <h3>[project page](https://github.com/TachibanaYoshino/AnimeGANv3/tree/master) | [paper](https://github.com/TachibanaYoshino/AnimeGANv3/tree/master)<h3/>        
-</div>
+</div> -->
 
 
 **Updates**    
