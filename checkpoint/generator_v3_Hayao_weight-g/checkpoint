@@ -1,0 +1,2 @@
+model_checkpoint_path: "AnimeGANv3_h5.model-36.ckpt"
+all_model_checkpoint_paths: "AnimeGANv3_h5.model-36.ckpt"

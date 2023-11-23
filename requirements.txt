@@ -1,0 +1,13 @@
+tqdm
+argparse
+joblib==1.1.0
+opencv-python==4.6.0.66
+scikit-image==0.17.2
+onnx==1.10.1
+onnxruntime==1.10.0
+onnxruntime-gpu==1.1.0
+tensorflow-GPU==1.15.0
+numpy==1.19.5
+pillow==8.4.0
+tf2onnx==1.10.1
+coremltools==6.0

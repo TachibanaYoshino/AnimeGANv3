@@ -1,9 +1,16 @@
 # AnimeGANv3   
-  
-## Let's use AnimeGANv3 to produce our own animation.  
 
-**Updates**  
-* `2023-10-31` Added three new styles of AnimeGANv3: Portrait  to Cute, 8bit and Sketch-0 style. :ghost:    
+Paper Title: A Novel Double-Tail Generative Adversarial Network for Fast Photo Animation.
+## Let's use AnimeGANv3 to produce our own animation.
+
+<div style="display:none">
+<h3>[project page](https://github.com/TachibanaYoshino/AnimeGANv3/tree/master) | [paper](https://github.com/TachibanaYoshino/AnimeGANv3/tree/master)<h3/>        
+</div>
+
+
+**Updates**    
+* `2023-11-23` The code and the [manuscript](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/doc/AnimeGANv3_manuscript.pdf) are released. 🦃   
+* `2023-10-31` Added three new styles of AnimeGANv3: Portrait  to Cute, 8bit and Sketch-0 style. :ghost:   
 * `2023-09-18` Added a new AnimeGANv3 model for Face to Kpop style.     
 * `2023-01-16` Added a new AnimeGANv3-photo.exe for the inference of AnimeGANv3's onnx model.     
 * `2023-01-13` Added a new AnimeGANv3 model for Face to comic style.     
@@ -12,7 +19,7 @@
 * `2022-11-06` Added a new AnimeGANv3 model for Face to Disney style **V1.0**. :european_castle:     
 * `2022-10-31` Added a new AnimeGANv3 model for Face to USA cartoon and Disney style **V1.0**. :jack_o_lantern:    
 * `2022-10-07` The USA cartoon Style of AnimeGANv3 is integrated to [**ProfileProfile**](https://apps.apple.com/in/app/profileprofile/id1636884362
-) with [Core ML](https://developer.apple.com/documentation/coreml). Install it by the Apple Store and have a try.
+) with [Core ML](https://developer.apple.com/documentation/coreml). Install it by the Apple Store and have a try.        
 * `2022-09-26` [Official online demo](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3) is integrated to [Huggingface Spaces](https://huggingface.co/spaces) with [Gradio](https://github.com/gradio-app/gradio). [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3)     
 * `2022-09-24` Added a new great AnimeGANv3 model for Face to USA cartoon Style.    
 * `2022-09-18` Update a new AnimeGANv3 model for Photo to Hayao Style.    
@@ -23,12 +30,31 @@
 
 ## Usage
        
-*  Official online demo is released in [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3).      
-       
-* Without installing any other dependencies, download this repository and use AnimeGANv3's graphical user interface program (AnimeGANv3.exe) and pre-trained models (onnx.zip) to turn your photos or videos into anime.:blush:   
+* Official online demo is released in [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3).      
 
+* Download this repository and use AnimeGANv3's [UI tool](https://github.com/TachibanaYoshino/AnimeGANv3_gui.exe) and pre-trained *.onnx to turn your photos or videos into anime.:blush:    
 
-## Demos 
+* Installation
+  1. Clone repo  
+      ```bash  
+      git clone https://github.com/TachibanaYoshino/AnimeGANv3.git
+      cd AnimeGANv3   
+      ```
+  
+  1. Install dependent packages
+      ```bash
+      pip install -r requirements.txt  
+      ```
+  1. Inference with *.onnx
+      ```bash
+      python deploy/test_by_onnx.py -i inputs/imgs/ -o output/results -m deploy/AnimeGANv3_Hayao_36.onnx  
+      ```
+  1. video to anime with *.onnx
+      ```bash
+      python tools/video2anime.py -i inputs/vid/1.mp4 -o output/results -m deploy/AnimeGANv3_Hayao_36.onnx  
+      ```
+
+## Landscape Demos     
 ### :fire: Video to anime (Hayao Style)   
 <p>
 <a href="https://youtu.be/EosubeJmAnE"><img src="https://img.shields.io/static/v1?label=YouTube&message=video 1&color=red"/></a>
@@ -69,6 +95,8 @@ ___
 </details>   
        
 ___    
+## Portrait Style Demos     
+**The paper has been completed in 2022. The study of portrait stylization is an extension of the paper.**     
 ### :art: Face to USA cartoon style     
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_USA/AnimeGANv3_USA_Trump.gif)     
       
@@ -88,7 +116,7 @@ ___
 <a href="https://youtu.be/vJqQQMRYKh0"><img src="https://img.shields.io/static/v1?label=YouTube&message=AnimeGANv3_Trump style v1.5 &color=gold"/></a>
       
 <details>
-<summary><strong>   more surprise</strong>&emsp;:point_left:</summary>    
+<summary><strong>   more surprise</strong>&emsp;:point_left:</summary>
       
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Trump/Trump_output.jpg)      
   
@@ -105,13 +133,14 @@ ___
 ### :art: Face to comic style   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_comic/AnimeGANv3_comic.gif)     
       
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_comic/AnimeGANv3_comic.jpg)     
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_comic/AnimeGANv3_comic.jpg)    
+     
 
 ___    
 ### :art: Face to Kpop style   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Kpop/AnimeGANv3_Kpop.gif)     
       
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Kpop/AnimeGANv3_Kpop.jpg)     
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Kpop/AnimeGANv3_Kpop.jpg)  
 
 ___    
 ### :art: Face to Cute style   
@@ -130,7 +159,7 @@ ___
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Sketch-0/AnimeGANv3_Sketch-0.jpg)  
 
 
-___ 
+___
 ### :art: Face to portrait sketch   
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XYNWwM8Xq-U7KaTOqNap6A-Yq1f-V-FB?usp=sharing)     
       
@@ -146,11 +175,44 @@ ___
 
 </details>    
 
-___     
+___   
 
-## License  
+## Train
+
+#### 1. Download dataset and pretrained vgg19   
+1. [vgg19](https://github.com/TachibanaYoshino/AnimeGAN/releases/download/vgg16%2F19.npy/vgg19_no_fc.npy)   
+2. [Hayao dataset](https://github.com/TachibanaYoshino/AnimeGANv2/releases/download/1.0/Hayao.tar.gz)   
+3. [Shinkai dataset](https://github.com/TachibanaYoshino/AnimeGANv2/releases/download/1.0/Shinkai.tar.gz)   
+4. [photo dataset](https://github.com/TachibanaYoshino/AnimeGAN/releases/download/dataset-1/dataset.zip)   
+
+#### 2. Do edge_smooth  
+```bash
+    cd tools && python edge_smooth.py --dataset Hayao --img_size 256
+  ```
+
+#### 3. Do superPixel
+```bash
+    cd tools && python visual_superPixel_seg_image.py
+  ```  
+
+#### 4. Train  
+  >  `python train.py --style_dataset Hayao --init_G_epoch 5 --epoch 100`
+
+
+## Citation   
+Consider citing as below if you find this repository helpful to your project:   
+```
+@article{Liu2024dtgan,
+  title={A Novel Double-Tail Generative Adversarial Network for Fast Photo Animation},
+  author={Gang Liu and Xin Chen and Zhixiang Gao},
+  journal={IEICE Transactions on Information and Systems},
+  year={2024}
+}
+```
+
+## :scroll: License  
 This repo is made freely available to academic and non-academic entities for non-commercial purposes such as academic research, teaching, scientific publications. Permission is granted to use the AnimeGANv3 given that you agree to my license terms. Regarding the request for commercial use, please contact us via email to help you obtain the authorization letter.    
 
-## Author  
-Asher Chan 
+## :e-mail: Author  
+Asher Chan `asher_chan@foxmail.com`
     
