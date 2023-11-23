@@ -126,8 +126,10 @@ ___
 <summary><strong>   more surprise</strong>&emsp;:point_left:</summary>
       
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Trump/Trump_output.jpg)      
-</details> 
+</details>   
+
 ___    
+
 ### :art: Face to Arcane style   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Arcane/AnimeGANv3_Arcane.gif)     
       
@@ -139,7 +141,6 @@ ___
       
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_comic/AnimeGANv3_comic.jpg)    
      
-
 ___    
 ### :art: Face to Kpop style   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Kpop/AnimeGANv3_Kpop.gif)     
@@ -161,7 +162,6 @@ ___
 ___    
 ### :art: Face to Sketch-0 style    
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Sketch-0/AnimeGANv3_Sketch-0.jpg)  
-
 
 ___
 ### :art: Face to portrait sketch   
@@ -200,7 +200,9 @@ ___
   ```  
 
 #### 4. Train  
-  >  `python train.py --style_dataset Hayao --init_G_epoch 5 --epoch 100`
+```bash
+    python train.py --style_dataset Hayao --init_G_epoch 5 --epoch 100
+  ```  
 
 <br/>   
 
