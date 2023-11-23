@@ -174,7 +174,9 @@ ___
     
 <details>
 <summary><strong>   more surprise</strong>&emsp;:point_left:</summary>     
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Face2portrait_sketch/face2portrait_sketch.jpg)   
+       
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Face2portrait_sketch/face2portrait_sketch.jpg)    
+       
 </details>    
 
 </details>  
