@@ -53,6 +53,7 @@ Paper Title: A Novel Double-Tail Generative Adversarial Network for Fast Photo A
       ```bash
       python tools/video2anime.py -i inputs/vid/1.mp4 -o output/results -m deploy/AnimeGANv3_Hayao_36.onnx  
       ```
+<br/>    
 
 ## Landscape Demos     
 ### :fire: Video to anime (Hayao Style)   
@@ -60,12 +61,12 @@ Paper Title: A Novel Double-Tail Generative Adversarial Network for Fast Photo A
 <a href="https://youtu.be/EosubeJmAnE"><img src="https://img.shields.io/static/v1?label=YouTube&message=video 1&color=red"/></a>
 <a href="https://youtu.be/5qLUflWb45E"><img src="https://img.shields.io/static/v1?label=YouTube&message=video 2&color=green"/></a>
 <a href="https://www.youtube.com/watch?v=iFjiaPlhVm4"><img src="https://img.shields.io/static/v1?label=YouTube&message=video 3&color=pink"/></a>
-</p>
+</p>   
 
-  
-____
+____     
+
 ### :art: Photo to Hayao Style    
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Hayao/32.jpg)      
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Hayao/4.jpg)      
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Hayao/29.jpg)   
 
 <details>
@@ -74,29 +75,35 @@ ____
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Hayao/33.jpg)   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Hayao/31.jpg)   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Hayao/35.jpg)   
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Hayao/4.jpg)   
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Hayao/32.jpg)   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Hayao/34.jpg)   
-
 </details>    
 
-___
+___   
+<br/>   
+
 ### :art: Photo to Shinkai Style 
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Shinkai/3.jpg)  
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Shinkai/4.jpg)  
      
 <details>
-<summary><strong>   more surprise</strong>&emsp;:point_left:</summary>    
+<summary><strong>   more surprise</strong>&emsp;:point_left: </summary>    
 
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Shinkai/9.jpg)   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Shinkai/10.jpg)   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Shinkai/11.jpg)  
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Shinkai/8.jpg)  
-
 </details>   
-       
-___    
+
+___
+<br/>   
+
 ## Portrait Style Demos     
 **The paper has been completed in 2022. The study of portrait stylization is an extension of the paper.**     
+
+<details>
+<summary><strong>   Some exhibits </strong>&emsp;:point_left:</summary>   
+       
 ### :art: Face to USA cartoon style     
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_USA/AnimeGANv3_USA_Trump.gif)     
       
@@ -119,10 +126,7 @@ ___
 <summary><strong>   more surprise</strong>&emsp;:point_left:</summary>
       
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Trump/Trump_output.jpg)      
-  
 </details> 
-      
-      
 ___    
 ### :art: Face to Arcane style   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Arcane/AnimeGANv3_Arcane.gif)     
@@ -170,12 +174,12 @@ ___
     
 <details>
 <summary><strong>   more surprise</strong>&emsp;:point_left:</summary>     
-
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Face2portrait_sketch/face2portrait_sketch.jpg)   
-
 </details>    
 
-___   
+</details>  
+
+<br/>   
 
 ## Train
 
@@ -198,6 +202,7 @@ ___
 #### 4. Train  
   >  `python train.py --style_dataset Hayao --init_G_epoch 5 --epoch 100`
 
+<br/>   
 
 ## Citation   
 Consider citing as below if you find this repository helpful to your project:   
