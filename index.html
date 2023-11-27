@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="A Novel Double-Tail Generative Adversarial Network for Fast Photo Animation.">
+  <meta name="keywords" content="DTGAN, AnimeGANv3">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AnimeGANv3: A Novel Double-Tail Generative Adversarial Network for Fast Photo Animation</title>
+  <base target="_blank"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+   <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">A Novel Double-Tail Generative Adversarial Network for Fast Photo Animation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a>Gang Liu</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a>Xin Chen</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a>Zhixiang GAO</a><sup>3</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Hubei University of Technology,</span>
+            <span class="author-block"><sup>2</sup>Canton,</span>
+            <span class="author-block"><sup>3</sup>Wuhan University</span>
+          </div>
+
+          <div class="is-size-5">
+            <span style="color: rgb(185, 185, 185);">IEICE Trans. Information and Systems</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://github.com/TachibanaYoshino/AnimeGANv3"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper(TBD)</span>
+                </a>
+              </span>
+               <span class="link-block">
+                <a href="https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/doc/AnimeGANv3_manuscript.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa fa-print" aria-hidden="true"></i>
+                  </span>
+                  <span>Manuscript</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa fa-link" ></i>
+                  </span>
+                  <span>Huggingface</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/TachibanaYoshino/AnimeGANv3"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video> -->
+      <img src="./static/images/f2.png"/>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf"></span> The pipeline of DTGAN. <br>
+        <span class="dnerf">AnimeGANv3</span> efficiently converts photos into cartoon images.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+         Photo animation is to transform photos of real-world scenes into anime style images, which is a challenging task in AIGC (AI Generated Content). Although previous methods have achieved promising results, they often introduce noticeable artifacts or distortions.
+          </p>
+          <p>
+            In this paper, we propose a novel double-tail generative adversarial network (DTGAN) for fast photo animation. <b>DTGAN is the third version of the AnimeGAN series. Therefore, DTGAN is also called AnimeGANv3.</b> The generator of DTGAN has two output tails, a support tail for outputting coarse-grained anime style images and a main tail for refining coarse-grained anime style images. In DTGAN, we propose a novel learnable normalization technique, termed as linearly adaptive denormalization (LADE), to prevent artifacts in the generated images. In order to improve the visual quality of the generated anime style images, two novel loss functions suitable for photo animation are proposed: 1) the region smoothing loss function, which is used to weaken the texture details of the generated images to achieve anime effects with abstract details; 2) the fine-grained revision loss function, which is used to eliminate artifacts and noise in the generated anime style image while preserving clear edges. Furthermore, the generator of DTGAN is a lightweight generator framework with only 1.02 million parameters in the inference phase. The proposed DTGAN can be easily end-to-end trained with unpaired training data.
+          </p>
+          <p>
+          Extensive experiments have been conducted to qualitatively and quantitatively demonstrate that our method can produce high-quality anime style images from real-world photos and perform better than the state-of-the-art models.          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <div class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video> -->
+      <img src="./static/images/f8.png"/>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf"></span>The architecture of generator network and discriminator network. <br>
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paper video. -->
+<!--    <div class="columns is-centered has-text-centered">-->
+<!--      <div class="column is-four-fifths">-->
+<!--        <h2 class="title is-3">Video</h2>-->
+<!--        <div class="publication-video">-->
+<!--          <iframe src="https://www.youtube.com/embed/Gc2d3Z8MMuI?rel=0&amp;showinfo=0"-->
+<!--                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Fine-grained revision -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Fine-grained revision</h2>
+          <p>
+            Although the two outputs of the support branch still have significant visual quality issues, after revision using the NL-means method and the L0 Smoothing method, the output of the main tail presents a high-definition cartoon image.
+          </p>
+            <!-- <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/dollyzoom-stacked.mp4"
+                    type="video/mp4">
+          </video> -->
+          <img src="./static/images/f3.png" style="margin-right: 10px;"/> <br>
+          <img src="./static/images/f4.png" style="margin-right: 10px;"/>
+        </div>
+      </div>
+      <!--/ Fine-grained revision. -->
+
+      <!-- LADE. -->
+      <div class="column">
+        <h2 class="title is-3">LADE</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+            The images produced by BN and LN have a large number of cracks. The images generated by IN and GN suffer from obvious visual artifacts. This demonstrate that BN, LN, IN and GN do not solve anime style transfer well.
+            The proposed LADE has superior anime stylization performance, and it can also be plug-and-play like other normalization methods.
+            </p>
+            <!-- <video id="matting-video" controls playsinline height="100%">
+              <source src="./static/videos/matting.mp4"
+                      type="video/mp4">
+            </video> -->
+            <img src="./static/images/f6.png"/>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ LADE. -->
+
+    <!-- Visualization. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Visualization</h2>
+
+        <!-- Interpolating. -->
+        <!-- <h3 class="title is-4">Interpolating states</h3>
+        <div class="content has-text-justified">
+          <p>
+            We can also animate the scene by interpolating the deformation latent codes of two input
+            frames. Use the slider here to linearly interpolate between the left frame and the right
+            frame.
+          </p>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/interpolate_start.jpg"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+            <p>Start Frame</p>
+          </div>
+          <div class="column interpolation-video-column">
+            <div id="interpolation-image-wrapper">
+              Loading...
+            </div>
+            <input class="slider is-fullwidth is-large is-info"
+                   id="interpolation-slider"
+                   step="1" min="0" max="100" value="0" type="range">
+          </div>
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/interpolate_end.jpg"
+                 class="interpolation-image"
+                 alt="Interpolation end reference image."/>
+            <p class="is-bold">End Frame</p>
+          </div>
+        </div>
+        <br/> -->
+        <!--/ Interpolating. -->
+
+        <!-- Re-rendering. -->
+        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
+        <div class="content has-text-justified">
+          <p>
+            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+            viewpoint such as a stabilized camera by playing back the training deformations.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="75%">
+            <source src="./static/videos/replay.mp4"
+                    type="video/mp4">
+          </video>
+        </div> -->
+        <!--/ Re-rendering. -->
+
+        <!-- <h3 class="title is-4">Demo</h3> -->
+        <div class="content has-text-justified">
+          <p>
+            Use the AnimeGANv3 to transform the beauty of European and American style into Hayao Miyazaki style animation.
+            With the wonderful BGM, it brings a comfortable and decompressive viewing experience.
+          </p>
+        </div>
+
+         <!-- Paper video. -->
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <!--        <h2 class="title is-3">Video</h2>-->
+              <div class="publication-video">
+                <iframe src="https://www.youtube.com/embed/VOe3bh1M7do?si=0cNcPdEz-XKs789B" title="YouTube video player"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+<!--        <div class="content has-text-centered">-->
+<!--          <video id="replay-video"-->
+<!--                 controls-->
+<!--                 preload-->
+<!--                 playsinline-->
+<!--                 width="75%">-->
+<!--            <source src="https://www.youtube.com/watch?v=VOe3bh1M7do"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+
+
+    <div class="columns is-centered">
+      <!-- Photo to Hayao Style -->
+       <div class="column">
+        <div class="content">
+          <h2 class="title is-5">Photo to Hayao Style</h2>
+          <img src="./static/images/h2.jpg" style="margin-right: 10px;"/> <br>
+          <img src="./static/images/h3.jpg"/>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+       <!-- Photo to Shinkai Style. -->
+       <div class="column">
+        <h2 class="title is-5">Photo to Shinkai Style</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <img src="./static/images/s2.jpg"/> <br>
+            <img src="./static/images/s1.jpg"/>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+        <h3 class="title is-3">Comparison</h3>
+        <div class="content has-text-justified">
+          <p>
+            Comarison with current SOTA baselines. Zoom in for better visualization.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/f5.png">
+        </div>
+
+      </div>
+    </div>
+    <!--/ Animation. -->
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Performance</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our method achieves the lowest scores on both FID to anime image distribution and KID to anime image distribution,
+            which proves DTGAN generates results most similar to anime images.
+            AnimeGANv2 outperforms all methods on FID to photo distribution and KID to photo distribution,
+            which indicates that AnimeGANv2 preserve more the content of photos than other methods. However,
+            it is not as good as our approach in anime style. Our model can process a 1920 × 1080 image on GPU within only 115.50 ms,
+            which is the fastest inference speed among all methods. Moreover, DTGAN has the smallest model size among all methods.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/table1.png">
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Related Works</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            <a href="http://cg.cs.tsinghua.edu.cn/people/~Yongjin/CartoonGan-CVPR2018.pdf">CartoonGAN</a> <br>
+            <a href="https://github.com/TachibanaYoshino/AnimeGAN/blob/master/doc/Chen2020_Chapter_AnimeGAN.pdf">AnimeGAN</a> <br>
+            <a href="https://tachibanayoshino.github.io/AnimeGANv2/">AnimeGANv2</a> <br>
+            <a href="https://github.com/SystemErrorWang/White-box-Cartoonization/blob/master/paper/06791.pdf">White-box-Cartoonization</a> <br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{Liu2024DTGAN,
+    title={A Novel Double-Tail Generative Adversarial Network for Fast Photo Animation},
+    author={Liu, Gang and Chen, Xin and Gao, Zhixiang},
+    journal={IEICE Trans. Information and Systems},
+    year={2024}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <!-- <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div> -->
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is developed based on <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
