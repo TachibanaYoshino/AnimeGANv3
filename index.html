@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-   <link rel="icon" href="./static/images/favicon.png">
+  <link rel="icon" href="./static/images/favicon.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -80,7 +80,7 @@
                   <span>Paper(TBD)</span>
                 </a>
               </span>
-               <span class="link-block">
+              <span class="link-block">
                 <a href="https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/doc/AnimeGANv3_manuscript.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -152,13 +152,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-         Photo animation is to transform photos of real-world scenes into anime style images, which is a challenging task in AIGC (AI Generated Content). Although previous methods have achieved promising results, they often introduce noticeable artifacts or distortions.
+            Photo animation is to transform photos of real-world scenes into anime style images, which is a challenging task in AIGC (AI Generated Content). Although previous methods have achieved promising results, they often introduce noticeable artifacts or distortions.
           </p>
           <p>
             In this paper, we propose a novel double-tail generative adversarial network (DTGAN) for fast photo animation. <b>DTGAN is the third version of the AnimeGAN series. Therefore, DTGAN is also called AnimeGANv3.</b> The generator of DTGAN has two output tails, a support tail for outputting coarse-grained anime style images and a main tail for refining coarse-grained anime style images. In DTGAN, we propose a novel learnable normalization technique, termed as linearly adaptive denormalization (LADE), to prevent artifacts in the generated images. In order to improve the visual quality of the generated anime style images, two novel loss functions suitable for photo animation are proposed: 1) the region smoothing loss function, which is used to weaken the texture details of the generated images to achieve anime effects with abstract details; 2) the fine-grained revision loss function, which is used to eliminate artifacts and noise in the generated anime style image while preserving clear edges. Furthermore, the generator of DTGAN is a lightweight generator framework with only 1.02 million parameters in the inference phase. The proposed DTGAN can be easily end-to-end trained with unpaired training data.
           </p>
           <p>
-          Extensive experiments have been conducted to qualitatively and quantitatively demonstrate that our method can produce high-quality anime style images from real-world photos and perform better than the state-of-the-art models.          </p>
+            Extensive experiments have been conducted to qualitatively and quantitatively demonstrate that our method can produce high-quality anime style images from real-world photos and perform better than the state-of-the-art models.          </p>
         </div>
       </div>
     </div>
@@ -167,28 +167,28 @@
     <div class="hero teaser">
       <div class="container is-max-desktop">
         <div class="hero-body">
-      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video> -->
-      <img src="./static/images/f8.png"/>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf"></span>The architecture of generator network and discriminator network. <br>
+          <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/teaser.mp4"
+                    type="video/mp4">
+          </video> -->
+          <img src="./static/images/f8.png"/>
+          <h2 class="subtitle has-text-centered">
+            <span class="dnerf"></span>The architecture of generator network and discriminator network. <br>
           </h2>
         </div>
       </div>
     </div>
 
     <!-- Paper video. -->
-<!--    <div class="columns is-centered has-text-centered">-->
-<!--      <div class="column is-four-fifths">-->
-<!--        <h2 class="title is-3">Video</h2>-->
-<!--        <div class="publication-video">-->
-<!--          <iframe src="https://www.youtube.com/embed/Gc2d3Z8MMuI?rel=0&amp;showinfo=0"-->
-<!--                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
+    <!--    <div class="columns is-centered has-text-centered">-->
+    <!--      <div class="column is-four-fifths">-->
+    <!--        <h2 class="title is-3">Video</h2>-->
+    <!--        <div class="publication-video">-->
+    <!--          <iframe src="https://www.youtube.com/embed/Gc2d3Z8MMuI?rel=0&amp;showinfo=0"-->
+    <!--                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
     <!--/ Paper video. -->
   </div>
 </section>
@@ -206,10 +206,10 @@
           <p>
             Although the two outputs of the support branch still have significant visual quality issues, after revision using the NL-means method and the L0 Smoothing method, the output of the main tail presents a high-definition cartoon image.
           </p>
-            <!-- <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video> -->
+          <!-- <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+          <source src="./static/videos/dollyzoom-stacked.mp4"
+                  type="video/mp4">
+        </video> -->
           <img src="./static/images/f3.png" style="margin-right: 10px;"/> <br>
           <img src="./static/images/f4.png" style="margin-right: 10px;"/>
         </div>
@@ -222,8 +222,8 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-            The images produced by BN and LN have a large number of cracks. The images generated by IN and GN suffer from obvious visual artifacts. This demonstrate that BN, LN, IN and GN do not solve anime style transfer well.
-            The proposed LADE has superior anime stylization performance, and it can also be plug-and-play like other normalization methods.
+              The images produced by BN and LN have a large number of cracks. The images generated by IN and GN suffer from obvious visual artifacts. This demonstrate that BN, LN, IN and GN do not solve anime style transfer well.
+              The proposed LADE has superior anime stylization performance, and it can also be plug-and-play like other normalization methods.
             </p>
             <!-- <video id="matting-video" controls playsinline height="100%">
               <source src="./static/videos/matting.mp4"
@@ -305,52 +305,75 @@
           </p>
         </div>
 
-         <!-- Paper video. -->
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <!--        <h2 class="title is-3">Video</h2>-->
-              <div class="publication-video">
-                <iframe src="https://www.youtube.com/embed/VOe3bh1M7do?si=0cNcPdEz-XKs789B" title="YouTube video player"
-                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </div>
+        <!-- Paper video. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <!--        <h2 class="title is-3">Video</h2>-->
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/VOe3bh1M7do?si=0cNcPdEz-XKs789B" title="YouTube video player"
+                      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
           </div>
-
-<!--        <div class="content has-text-centered">-->
-<!--          <video id="replay-video"-->
-<!--                 controls-->
-<!--                 preload-->
-<!--                 playsinline-->
-<!--                 width="75%">-->
-<!--            <source src="https://www.youtube.com/watch?v=VOe3bh1M7do"-->
-<!--                    type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-
-
-    <div class="columns is-centered">
-      <!-- Photo to Hayao Style -->
-       <div class="column">
-        <div class="content">
-          <h2 class="title is-5">Photo to Hayao Style</h2>
-          <img src="./static/images/h2.jpg" style="margin-right: 10px;"/> <br>
-          <img src="./static/images/h3.jpg"/>
         </div>
-      </div>
-      <!--/ Visual Effects. -->
 
-       <!-- Photo to Shinkai Style. -->
-       <div class="column">
-        <h2 class="title is-5">Photo to Shinkai Style</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <img src="./static/images/s2.jpg"/> <br>
-            <img src="./static/images/s1.jpg"/>
+
+        <section class="section">
+          <div class="container is-max-desktop is-centered has-text-centered">
+            <h5 class="title is-5">Photo to Hayao Style</h5>
+            <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="1">
+              <img src="static/images/Hayao/v3_25.jpg" style="width: 100%;">
+              <img src="static/images/Hayao/v3_5.jpg" style="width: 100%;">
+              <img src="static/images/Hayao/v3_10.jpg" style="width: 100%;">
+              <img src="static/images/Hayao/v3_1.jpg" style="width: 100%;">
+              <img src="static/images/Hayao/v3_30.jpg" style="width: 100%;">
+              <img src="static/images/Hayao/v3_49.jpg" style="width: 100%;">
+              <img src="static/images/Hayao/v3_51.jpg" style="width: 100%;">
+              <img src="static/images/Hayao/v3_52.jpg" style="width: 100%;">
+              <img src="static/images/Hayao/v3_53.jpg" style="width: 100%;">
+            </div>
           </div>
+          <br><br>
+          <div class="container is-max-desktop is-centered has-text-centered">
+            <h5 class="title is-5">Photo to Shinkai Style</h5>
+            <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="1">
+              <img src="static/images/Shinkai/naci.jpg" style="width: 100%;">
+              <img src="static/images/Shinkai/Sakura.jpg" style="width: 100%;">
+              <img src="static/images/Shinkai/v3_7.jpg" style="width: 100%;">
+              <img src="static/images/Shinkai/v3_11.jpg" style="width: 100%;">
+              <img src="static/images/Shinkai/v3_15.jpg" style="width: 100%;">
+              <img src="static/images/Shinkai/v3_19.jpg" style="width: 100%;">
+              <img src="static/images/Shinkai/v3_45.jpg" style="width: 100%;">
+              <img src="static/images/Shinkai/v3_54.jpg" style="width: 100%;">
+              <img src="static/images/Shinkai/v3_55.jpg" style="width: 100%;">
+              <img src="static/images/Shinkai/v3_59.jpg" style="width: 100%;">
+            </div>
+          </div>
+        </section>
 
+
+        <div class="columns is-centered">
+          <!-- Photo to Hayao Style -->
+          <div class="column">
+            <div class="content">
+              <h5 class="title is-5">Photo to Hayao Style</h5>
+              <img src="./static/images/h2.jpg" style="margin-right: 10px;"/> <br>
+              <img src="./static/images/h3.jpg"/>
+            </div>
+          </div>
+          <!--/ Visual Effects. -->
+
+          <!-- Photo to Shinkai Style. -->
+          <div class="column">
+            <h5 class="title is-5">Photo to Shinkai Style</h5>
+            <div class="columns is-centered">
+              <div class="column content">
+                <img src="./static/images/s2.jpg"/> <br>
+                <img src="./static/images/s1.jpg"/>
+              </div>
+
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
 
 
@@ -438,7 +461,7 @@
         <div class="content">
           <p>
             This website is developed based on <a
-              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+                  href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
           </p>
         </div>
       </div>
