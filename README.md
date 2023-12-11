@@ -3,12 +3,23 @@
 Paper Title: A Novel Double-Tail Generative Adversarial Network for Fast Photo Animation.
 ## Let's use AnimeGANv3 to produce our own animation.
 
-**[Project page](https://tachibanayoshino.github.io/AnimeGANv3/) | [Paper(TBD)](https://github.com/TachibanaYoshino/AnimeGANv3/tree/master)**           
+[![manuscript](https://img.shields.io/badge/manuscript-Website-gold?logo=googledocs&logoColor=gold)](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/doc/AnimeGANv3_manuscript.pdf)
+[![Paper](https://img.shields.io/badge/(TBD)cs.CV-Paper-violet?logo=docusign&logoColor=violet)](https://github.com/TachibanaYoshino/AnimeGANv3/tree/master)
+[![Project Page](https://img.shields.io/badge/AnimeGANv3-Website-green?logo=googlechrome&logoColor=green)](https://tachibanayoshino.github.io/AnimeGANv3/)
+[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Leaderboard-40D1F5)](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3)
+[![Video](https://img.shields.io/badge/YouTube-Video-b31b1b?logo=youtube&logoColor=red)](https://youtu.be/EosubeJmAnE)
+[![twitter](https://img.shields.io/badge/twitter-Asher-1D9BF0?logo=twitter&logoColor=#1D9BF0)](https://twitter.com/asher_9527)
+[![LICENSE](https://img.shields.io/badge/license-AnimeGANv3-AB82FF?logo=leagueoflegends&logoColor=AB82FF)](https://github.com/TachibanaYoshino/AnimeGANv3?tab=readme-ov-file#scroll-license)
+[![Github](https://img.shields.io/github/stars/TachibanaYoshino/AnimeGANv3?logo=githubsponsors&logoColor=#EA4AAA)](https://github.com/TachibanaYoshino/AnimeGANv3)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1Er23bL36pkr67Q9f1P28BuMP6yZKf-yz/view?usp=sharing)
+[![Visitor](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FVchitect%2FAnimeGANv3&count_bg=%23FFA500&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false)](https://hits.seeyoufarm.com)
+           
 
 
-**Updates**    
+## 📢 Updates    
+* `2023-12-10` Added a new AnimeGANv3 model for Portrait to Oil-painting style. Its onnx is available [here](https://www.patreon.com/posts/animeganv3-s-oil-94445425?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link).     
 * `2023-11-23` The code and the [manuscript](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/doc/AnimeGANv3_manuscript.pdf) are released. 🦃   
-* `2023-10-31` Added three new styles of AnimeGANv3: Portrait  to Cute, 8bit and Sketch-0 style. :ghost:   
+* `2023-10-31` Added three new styles of AnimeGANv3: Portrait to Cute, 8bit and Sketch-0 style. :ghost:   
 * `2023-09-18` Added a new AnimeGANv3 model for Face to Kpop style.     
 * `2023-01-16` Added a new AnimeGANv3-photo.exe for the inference of AnimeGANv3's onnx model.     
 * `2023-01-13` Added a new AnimeGANv3 model for Face to comic style.     
@@ -26,13 +37,13 @@ Paper Title: A Novel Double-Tail Generative Adversarial Network for Fast Photo A
 * `2021-12-25` The paper of AnimeGANv3 will be released in 2022.:christmas_tree:  
 ---------  
 
-## Usage
+## 🎮 Usage
        
 * Official online demo is released in [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3).      
 
 * Download this repository and use AnimeGANv3's [UI tool](https://github.com/TachibanaYoshino/AnimeGANv3_gui.exe) and pre-trained *.onnx to turn your photos or videos into anime.:blush:    
 
-* Installation
+* 🛠️ Installation
   1. Clone repo  
       ```bash  
       git clone https://github.com/TachibanaYoshino/AnimeGANv3.git
@@ -53,7 +64,7 @@ Paper Title: A Novel Double-Tail Generative Adversarial Network for Fast Photo A
       ```
 <br/>    
 
-## Landscape Demos     
+## 🚀 Landscape Demos     
 ### :fire: Video to anime (Hayao Style)   
 <p>
 <a href="https://youtu.be/EosubeJmAnE"><img src="https://img.shields.io/static/v1?label=YouTube&message=video 1&color=red"/></a>
@@ -68,7 +79,7 @@ ____
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Hayao/29.jpg)   
 
 <details>
-<summary><strong>   more surprise</strong>&emsp;:point_left:</summary>    
+<summary><strong>   more surprise</strong>&emsp;👈</summary>    
 
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Hayao/33.jpg)   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Hayao/31.jpg)   
@@ -85,7 +96,7 @@ ___
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Shinkai/4.jpg)  
      
 <details>
-<summary><strong>   more surprise</strong>&emsp;:point_left: </summary>    
+<summary><strong>   more surprise</strong>&emsp;👈 </summary>    
 
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Shinkai/9.jpg)   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Shinkai/10.jpg)   
@@ -96,11 +107,11 @@ ___
 ___
 <br/>   
 
-## Portrait Style Demos     
+## 🚀 Portrait Style Demos     
 **The paper has been completed in 2022. The study of portrait stylization is an extension of the paper.**     
 
 <details>
-<summary><strong>   Some exhibits </strong>&emsp;:point_left:</summary>   
+<summary><strong>   Some exhibits </strong>&emsp;👈</summary>   
        
 ### :art: Face to USA cartoon style     
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_USA/AnimeGANv3_USA_Trump.gif)     
@@ -121,7 +132,7 @@ ___
 <a href="https://youtu.be/vJqQQMRYKh0"><img src="https://img.shields.io/static/v1?label=YouTube&message=AnimeGANv3_Trump style v1.5 &color=gold"/></a>
       
 <details>
-<summary><strong>   more surprise</strong>&emsp;:point_left:</summary>
+<summary><strong>   more surprise</strong>&emsp;👈</summary>
       
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Trump/Trump_output.jpg)      
 </details>   
@@ -134,7 +145,7 @@ ___
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Arcane/AnimeGANv3_Arcane.jpg)   
         
 ___    
-### :art: Face to comic style   
+### :art: Portrait to comic style   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_comic/AnimeGANv3_comic.gif)     
       
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_comic/AnimeGANv3_comic.jpg)    
@@ -146,19 +157,29 @@ ___
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Kpop/AnimeGANv3_Kpop.jpg)  
 
 ___    
-### :art: Face to Cute style   
+### :art: Portrait to Oil-painting style   
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_oil-painting/AnimeGANv3_oil-painting.gif)     
+
+<details>
+<summary><strong>   more surprise</strong>&emsp;👈 </summary>
+
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_oil-painting/AnimeGANv3_oil-painting.jpg)     
+</details>  
+
+___    
+### :art: Portrait to Cute style   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Cute/AnimeGANv3_Cute.gif)     
       
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Cute/AnimeGANv3_Cute.jpg)    
 
 ___    
-### :art: Face to 8bit style   
+### :art: Portrait to 8bit style   
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_8bit/AnimeGANv3_8bit.gif)     
       
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_8bit/AnimeGANv3_8bit.jpg)    
 
 ___    
-### :art: Face to Sketch-0 style    
+### :art: Portrait to Sketch-0 style    
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Sketch-0/AnimeGANv3_Sketch-0.jpg)  
 
 ___
@@ -171,7 +192,7 @@ ___
 |<img src="https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Face2portrait_sketch/body.jpg" height="60%" width="60%">|<img src="https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Face2portrait_sketch/output_onnx3.png" height="60%" width="60%" >|<img src="https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Face2portrait_sketch/output_onnx2.png" height="60%" width="60%">|     
     
 <details>
-<summary><strong>   more surprise</strong>&emsp;:point_left:</summary>     
+<summary><strong>   more surprise</strong>&emsp;👈</summary>     
        
 ![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Face2portrait_sketch/face2portrait_sketch.jpg)    
        
@@ -181,7 +202,7 @@ ___
 
 <br/>   
 
-## Train
+## 🔨 Train
 
 #### 1. Download dataset and pretrained vgg19   
 1. [vgg19](https://github.com/TachibanaYoshino/AnimeGAN/releases/download/vgg16%2F19.npy/vgg19_no_fc.npy)   
@@ -206,7 +227,7 @@ ___
 
 <br/>   
 
-## Citation   
+## ✒️ Citation   
 Consider citing as below if you find this repository helpful to your project:   
 ```
 @article{Liu2024dtgan,
