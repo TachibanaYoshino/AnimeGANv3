@@ -3,6 +3,8 @@
 Paper Title: A Novel Double-Tail Generative Adversarial Network for Fast Photo Animation.
 ## Let's use AnimeGANv3 to produce our own animation.
 
+<div align="center">    
+           
 [![manuscript](https://img.shields.io/badge/manuscript-Website-gold?logo=googledocs&logoColor=gold)](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/doc/AnimeGANv3_manuscript.pdf)
 [![Paper](https://img.shields.io/badge/(TBD)cs.CV-Paper-violet?logo=docusign&logoColor=violet)](https://github.com/TachibanaYoshino/AnimeGANv3/tree/master)
 [![Project Page](https://img.shields.io/badge/AnimeGANv3-Website-green?logo=googlechrome&logoColor=green)](https://tachibanayoshino.github.io/AnimeGANv3/)
@@ -13,8 +15,8 @@ Paper Title: A Novel Double-Tail Generative Adversarial Network for Fast Photo A
 [![Github](https://img.shields.io/github/stars/TachibanaYoshino/AnimeGANv3?logo=githubsponsors&logoColor=#EA4AAA)](https://github.com/TachibanaYoshino/AnimeGANv3)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1Er23bL36pkr67Q9f1P28BuMP6yZKf-yz/view?usp=sharing)
 [![Visitor](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FVchitect%2FAnimeGANv3&count_bg=%23FFA500&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false)](https://hits.seeyoufarm.com)
-           
 
+</div>       
 
 ## 📢 Updates    
 * `2023-12-10` Added a new AnimeGANv3 model for Portrait to Oil-painting style. Its onnx is available [here](https://www.patreon.com/posts/animeganv3-s-oil-94445425?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link).     
