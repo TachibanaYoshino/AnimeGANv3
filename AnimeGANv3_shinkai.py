@@ -107,10 +107,10 @@ class AnimeGANv3(object) :
         """support"""
         self.con_loss =  con_loss(self.real_photo, self.generated, 0.5)
 
-        self.s22, self.s33, self.s44  = style_loss_decentralization_3(self.anime_sty_gray, self.fake_sty_gray,  [0.1, 5,  25]) # s1
+        self.s22, self.s33, self.s44  = style_loss_decentralization_3(self.anime_sty_gray, self.fake_sty_gray,  [0.1, 2.0,  28]) 
         self.sty_loss = self.s22 + self.s33 + self.s44
 
-        self.rs_loss =  region_smoothing_loss(self.fake_superpixel, self.generated, 0.5 ) + \
+        self.rs_loss =  region_smoothing_loss(self.fake_superpixel, self.generated, 0.8 ) + \
                         VGG_LOSS(self.photo_superpixel, self.generated) * 0.5
 
         self.color_loss =  Lab_color_loss(self.real_photo, self.generated, 8. )
@@ -216,8 +216,8 @@ class AnimeGANv3(object) :
                     """ Update G """
                     # output fake image
                     inter_out_s, inter_out= self.sess.run([self.generated_s, self.generated], feed_dict=train_feed_dict)
-                    superpixel_batch = self.get_simple_superpixel_improve(inter_out, seg_num=200)
-                    # superpixel_batch = self.get_seg(inter_out)
+                    # superpixel_batch = self.get_simple_superpixel_improve(inter_out, seg_num=200)
+                    superpixel_batch = self.get_seg(inter_out)
                     fake_NLMean_batch = self.get_NLMean_l0(inter_out_s)
                     train_feed_dict.update(
                         {
@@ -286,7 +286,7 @@ class AnimeGANv3(object) :
         def get_superpixel(image):
             image = (image + 1.) * 127.5
             image = np.clip(image, 0, 255).astype(np.uint8)  # [-1. ,1.] ~ [0, 255]
-            image_seg = segmentation.felzenszwalb(image, scale=5, sigma=0.8, min_size=50)
+            image_seg = segmentation.felzenszwalb(image, scale=5, sigma=0.8, min_size=100)
             image = color.label2rgb(image_seg, image,  bg_label=-1, kind='avg').astype(np.float32)
             image = image / 127.5 - 1.0
             return image
