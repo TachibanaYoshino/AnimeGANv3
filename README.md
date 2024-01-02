@@ -20,15 +20,15 @@ Paper Title: A Novel Double-Tail Generative Adversarial Network for Fast Photo A
 
 ## 📢 Updates    
 * `2023-12-10` Added a new AnimeGANv3 model for Portrait to Oil-painting style. Its onnx is available [here](https://www.patreon.com/posts/animeganv3-s-oil-94445425?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link).     
-* `2023-11-23` The code and the [manuscript](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/doc/AnimeGANv3_manuscript.pdf) are released. 🦃   
+* `2023-11-23` The code and the [manuscript](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/doc/AnimeGANv3_manuscript.pdf) are released.  🦃   
 * `2023-10-31` Added three new styles of AnimeGANv3: Portrait to Cute, 8bit and Sketch-0 style. :ghost:   
 * `2023-09-18` Added a new AnimeGANv3 model for Face to Kpop style.     
 * `2023-01-16` Added a new AnimeGANv3-photo.exe for the inference of AnimeGANv3's onnx model.     
 * `2023-01-13` Added a new AnimeGANv3 model for Face to comic style.     
 * `2022-12-25` Added the tiny model (2.4MB) of [~~Nordic myth style~~]() and USA style 2.0. It can go upto 50 FPS on iphone14 with 512*512 input. :santa:       
-* `2022-11-24` ~~Added a new AnimeGANv3 model for Face to Nordic myth style.~~ 🦃      
-* `2022-11-06` Added a new AnimeGANv3 model for Face to Disney style **V1.0**. :european_castle:     
-* `2022-10-31` Added a new AnimeGANv3 model for Face to USA cartoon and Disney style **V1.0**. :jack_o_lantern:    
+* `2022-11-24` ~~Added a new AnimeGANv3 model for Face to Nordic myth style.~~  🦃      
+* `2022-11-06` Added a new AnimeGANv3 model for Face to Disney style **V1.0**.         
+* `2022-10-31` Added a new AnimeGANv3 model for Face to USA cartoon and Disney style **V1.0**.  :jack_o_lantern:    
 * `2022-10-07` The USA cartoon Style of AnimeGANv3 is integrated to [**ProfileProfile**](https://apps.apple.com/in/app/profileprofile/id1636884362
 ) with [Core ML](https://developer.apple.com/documentation/coreml). Install it by the Apple Store and have a try.        
 * `2022-09-26` [Official online demo](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3) is integrated to [Huggingface Spaces](https://huggingface.co/spaces) with [Gradio](https://github.com/gradio-app/gradio). [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3)     
@@ -36,14 +36,14 @@ Paper Title: A Novel Double-Tail Generative Adversarial Network for Fast Photo A
 * `2022-09-18` Update a new AnimeGANv3 model for Photo to Hayao Style.    
 * `2022-08-01` Added a new AnimeGANv3 onnx model [**(Colab)**](https://www.patreon.com/posts/new-animeganv3-69895469?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator) for Face to [Arcane](https://www.netflix.com/sg/title/81435684) style.    
 * `2022-07-13` Added a new AnimeGANv3 onnx model [**(Colab)**](https://colab.research.google.com/drive/1XYNWwM8Xq-U7KaTOqNap6A-Yq1f-V-FB?usp=sharing) for Face to portrait sketch.
-* `2021-12-25` The paper of AnimeGANv3 will be released in 2022.:christmas_tree:  
+* `2021-12-25` The paper of AnimeGANv3 will be released in 2022.  :christmas_tree:  
 ---------  
 
 ## 🎮 Usage
        
 * Official online demo is released in [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3).      
 
-* Download this repository and use AnimeGANv3's [UI tool](https://github.com/TachibanaYoshino/AnimeGANv3_gui.exe) and pre-trained *.onnx to turn your photos or videos into anime.:blush:    
+* Download this repository and use AnimeGANv3's [UI tool](https://github.com/TachibanaYoshino/AnimeGANv3_gui.exe) and pre-trained *.onnx to turn your photos or videos into anime. :blush:    
 
 * 🛠️ Installation
   1. Clone repo  
