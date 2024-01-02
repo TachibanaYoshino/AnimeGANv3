@@ -5,9 +5,9 @@ Paper Title: A Novel Double-Tail Generative Adversarial Network for Fast Photo A
 
 <div align="center">    
            
-[![manuscript](https://img.shields.io/badge/manuscript-Website-gold?logo=googledocs&logoColor=gold)](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/doc/AnimeGANv3_manuscript.pdf)
-[![Paper](https://img.shields.io/badge/(TBD)cs.CV-Paper-violet?logo=docusign&logoColor=violet)](https://github.com/TachibanaYoshino/AnimeGANv3/tree/master)
-[![Project Page](https://img.shields.io/badge/AnimeGANv3-Website-green?logo=googlechrome&logoColor=green)](https://tachibanayoshino.github.io/AnimeGANv3/)
+[![manuscript](https://img.shields.io/badge/manuscript-PDF-gold?logo=googledocs&logoColor=gold)](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/doc/AnimeGANv3_manuscript.pdf)
+[![Paper](https://img.shields.io/badge/cs.CV-Paper-violet?logo=docusign&logoColor=violet)](https://www.jstage.jst.go.jp/article/transinf/E107.D/1/E107.D_2023EDP7061/_pdf/-char/en)
+[![Project Page](https://img.shields.io/badge/Project-Website-green?logo=googlechrome&logoColor=green)](https://tachibanayoshino.github.io/AnimeGANv3/)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Leaderboard-40D1F5)](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3)
 [![Video](https://img.shields.io/badge/YouTube-Video-b31b1b?logo=youtube&logoColor=red)](https://youtu.be/EosubeJmAnE)
 [![twitter](https://img.shields.io/badge/twitter-Asher-1D9BF0?logo=twitter&logoColor=#1D9BF0)](https://twitter.com/asher_9527)
@@ -231,12 +231,16 @@ ___
 
 ## ✒️ Citation   
 Consider citing as below if you find this repository helpful to your project:   
-```
+```bibtex
 @article{Liu2024dtgan,
   title={A Novel Double-Tail Generative Adversarial Network for Fast Photo Animation},
-  author={Gang Liu and Xin Chen and Zhixiang Gao},
+  author={Gang LIU and Xin CHEN and Zhixiang GAO},
   journal={IEICE Transactions on Information and Systems},
-  year={2024}
+  volume={E107.D},
+  number={1},
+  pages={72-82},
+  year={2024},
+  doi={10.1587/transinf.2023EDP7061}
 }
 ```
 
