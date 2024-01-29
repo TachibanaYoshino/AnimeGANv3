@@ -19,6 +19,7 @@ Paper Title: A Novel Double-Tail Generative Adversarial Network for Fast Photo A
 </div>       
 
 ## 📢 Updates    
+* `2024-01-29` [Web Demo](https://xandrchris.github.io/Tf.js_Demos/AnimeGAN-v3) for Hayao and Shinkai models using [Tfjs](https://tensorflow.org/js).
 * `2023-12-10` Added a new AnimeGANv3 model for Portrait to Oil-painting style. Its onnx is available [here](https://www.patreon.com/posts/animeganv3-s-oil-94445425?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link).     
 * `2023-11-23` The code and the [manuscript](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/doc/AnimeGANv3_manuscript.pdf) are released.  🦃   
 * `2023-10-31` Added three new styles of AnimeGANv3: Portrait to Cute, 8bit and Sketch-0 style. :ghost:   
