@@ -10,7 +10,7 @@ Paper Title: A Novel Double-Tail Generative Adversarial Network for Fast Photo A
 [![Project Page](https://img.shields.io/badge/Project-Website-green?logo=googlechrome&logoColor=green)](https://tachibanayoshino.github.io/AnimeGANv3/)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Leaderboard-40D1F5)](https://huggingface.co/spaces/TachibanaYoshino/AnimeGANv3)
 [![Video](https://img.shields.io/badge/YouTube-Video-b31b1b?logo=youtube&logoColor=red)](https://youtu.be/EosubeJmAnE)
-[![twitter](https://img.shields.io/badge/twitter-Asher-1D9BF0?logo=twitter&logoColor=#1D9BF0)](https://twitter.com/asher_9527)
+[![twitter](https://img.shields.io/badge/twitter-Asher-1D9BF0?logo=x&logoColor=#1D9BF0)](https://twitter.com/asher_9527)
 [![LICENSE](https://img.shields.io/badge/license-AnimeGANv3-AB82FF?logo=leagueoflegends&logoColor=AB82FF)](https://github.com/TachibanaYoshino/AnimeGANv3?tab=readme-ov-file#scroll-license)
 [![Github](https://img.shields.io/github/stars/TachibanaYoshino/AnimeGANv3?logo=githubsponsors&logoColor=#EA4AAA)](https://github.com/TachibanaYoshino/AnimeGANv3)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1Er23bL36pkr67Q9f1P28BuMP6yZKf-yz/view?usp=sharing)
