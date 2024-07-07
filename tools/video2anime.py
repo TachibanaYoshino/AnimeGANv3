@@ -1,4 +1,4 @@
-import argparse
+import argparse,subprocess
 import os
 import cv2
 from PIL import Image
@@ -16,7 +16,7 @@ def parse_args():
     parser.add_argument('-i','--input_video_path', type=str, default='/home/ada/'+ 'v3-3.mp4', help='video file or number for webcam')
     parser.add_argument('-m','--model_path', type=str, default='models/AnimeGANv3_Hayao_36.onnx',  help='file path to save the modles')
     parser.add_argument('-o','--output', type=str, default='video/output/' ,help='output path')
-    parser.add_argument('-d','--device', type=str, default='cpu', choices=["cpu","gpu"] ,help='running device')
+    parser.add_argument('-d','--device', type=str, default='cpu', choices=["cpu","gpu","trt"] ,help='running device')
     return parser.parse_args()
 
 def check_folder(path):
@@ -83,6 +83,8 @@ class Cartoonizer():
         self.args = arg
         if ort.get_device() == 'GPU' and self.args.device=="gpu" :
             self.sess_land = ort.InferenceSession(self.args.model_path, providers = ['CUDAExecutionProvider','CPUExecutionProvider',])
+        elif ort.get_device() == 'trt':
+            self.sess_land = ort.InferenceSession(self.args.model_path, providers = ['TensorrtExecutionProvider', 'CUDAExecutionProvider',])
         else:
             self.sess_land = ort.InferenceSession(self.args.model_path, providers = ['CPUExecutionProvider',])
         self.name = os.path.basename( self.args.model_path).rsplit('.',1)[0]
@@ -100,7 +102,9 @@ class Cartoonizer():
         vid = Videocap(self.args.input_video_path, self.name)
         codec = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
         num = vid.total
-        self.video_out = cv2.VideoWriter(os.path.join(self.args.output, os.path.basename(self.args.input_video_path).rsplit('.', 1)[0] + f'_{self.name}.mp4'), codec, vid.fps, (vid.ori_width, vid.ori_height))
+        ouput_video_path = os.path.join(self.args.output, os.path.basename(self.args.input_video_path).rsplit('.', 1)[0] + f'_{self.name}.mp4')
+        ouput_videoSounds_path = os.path.join(self.args.output, os.path.basename(self.args.input_video_path).rsplit('.', 1)[0] + f'_{self.name}_sounds.mp4')
+        self.video_out = cv2.VideoWriter(ouput_video_path, codec, vid.fps, (vid.ori_width, vid.ori_height))
         pbar = tqdm(total=vid.total, )
         pbar.set_description(f"Running: {os.path.basename(self.args.input_video_path).rsplit('.', 1)[0] + f'_{self.name}.mp4'}")
         while num>0:
@@ -116,7 +120,15 @@ class Cartoonizer():
             num-=1
         pbar.close()
         self.video_out.release()
-        return os.path.join(self.args.output, os.path.basename(self.args.input_video_path).rsplit('.', 1)[0] + f'_{self.name}.mp4')
+        try:
+           command = ["ffmpeg", "-loglevel", "error", "-i", self.args.input_video_path, "-y", "sound.mp3"]
+           r = subprocess.check_call(command) # Get the audio of the input video (MP3)
+           command = ["ffmpeg", "-loglevel", "error", "-i", "sound.mp3", "-i", ouput_video_path, "-y", ouput_videoSounds_path]
+           r = subprocess.check_call(command) # Merge the output video with the sound to get the final result
+           return ouput_videoSounds_path
+        except:
+           print("ffmpeg fails to obtain audio, generating silent video.")
+           return ouput_video_path
 
 
 if __name__ == '__main__':
@@ -125,4 +137,3 @@ if __name__ == '__main__':
     func =Cartoonizer(arg)
     info = func()
     print(f'output video: {info}')
-
