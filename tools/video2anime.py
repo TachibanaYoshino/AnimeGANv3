@@ -121,14 +121,14 @@ class Cartoonizer():
         pbar.close()
         self.video_out.release()
         try:
-           command = ["ffmpeg", "-loglevel", "error", "-i", self.args.input_video_path, "-y", "sound.mp3"]
-           r = subprocess.check_call(command) # Get the audio of the input video (MP3)
-           command = ["ffmpeg", "-loglevel", "error", "-i", "sound.mp3", "-i", ouput_video_path, "-y", ouput_videoSounds_path]
-           r = subprocess.check_call(command) # Merge the output video with the sound to get the final result
-           return ouput_videoSounds_path
+            command = ["ffmpeg", "-loglevel", "error", "-i", self.args.input_video_path, "-y", "sound.mp3"]
+            r = subprocess.check_call(command) # Get the audio of the input video (MP3)
+            command = ["ffmpeg", "-loglevel", "error", "-i", "sound.mp3", "-i", ouput_video_path, "-y", ouput_videoSounds_path]
+            r = subprocess.check_call(command) # Merge the output video with the sound to get the final result
+            return ouput_videoSounds_path
         except:
-           print("ffmpeg fails to obtain audio, generating silent video.")
-           return ouput_video_path
+            print("ffmpeg fails to obtain audio, generating silent video.")
+            return ouput_video_path
 
 
 if __name__ == '__main__':
