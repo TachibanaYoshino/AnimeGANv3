@@ -10,6 +10,7 @@ import onnxruntime as ort
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
+
 def parse_args():
     desc = "Tensorflow implementation of AnimeGANv3"
     parser = argparse.ArgumentParser(description=desc)

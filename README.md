@@ -60,10 +60,21 @@ Paper Title: A Novel Double-Tail Generative Adversarial Network for Fast Photo A
       ```bash
       python deploy/test_by_onnx.py -i inputs/imgs/ -o output/results -m deploy/AnimeGANv3_Hayao_36.onnx  
       ```
+
+            python deploy/test_by_onnx.py -i inputs/imgs/ -o output/results -m deploy/AnimeGANv3_Hayao_36.onnx  
+
   1. video to anime with *.onnx
       ```bash
       python tools/video2anime.py -i inputs/vid/1.mp4 -o output/results -m deploy/AnimeGANv3_Hayao_36.onnx  
       ```
+
+```bash
+python tools/video2anime.py -i inputs/vid/*.mp4 -o output/results -m deploy/AnimeGANv3_Hayao_36.onnx  
+```
+python tools/video2anime.py -i inputs/vid/An8VYy.mp4 -o output/results -m deploy/AnimeGANv3_Hayao_36.onnx  
+08142
+python tools/video2anime.py -i inputs/vid/08142.mp4 -o output/results -m deploy/AnimeGANv3_Hayao_36.onnx  
+
 <br/>    
 
 ## 🚀 Landscape Demos     

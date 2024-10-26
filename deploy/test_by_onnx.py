@@ -14,7 +14,7 @@ def parse_args():
     desc = "Tensorflow implementation of AnimeGANv3"
     parser = argparse.ArgumentParser(description=desc)
     parser.add_argument('-i', '--input_imgs_dir', type=str, default='/home/ada/test_data', help='video file or number for webcam')
-    parser.add_argument('-m', '--model_path', type=str, default='models/AnimeGANv3_Hayao_36.onnx',  help='file path to save the modles')
+    parser.add_argument('-m', '--model_path', type=str, default='models/AnimeGANv3_Hayao_36.onnx',  help='file path to save the models')
     parser.add_argument('-o', '--output_path', type=str, default='./output/' ,help='output path')
     parser.add_argument('-d','--device', type=str, default='cpu', choices=["cpu","gpu"] ,help='running device')
     return parser.parse_args()
