@@ -16,7 +16,8 @@ def parse_args():
     parser.add_argument('-i','--input_video_path', type=str, default='/home/ada/'+ 'v3-3.mp4', help='video file or number for webcam')
     parser.add_argument('-m','--model_path', type=str, default='models/AnimeGANv3_Hayao_36.onnx',  help='file path to save the modles')
     parser.add_argument('-o','--output', type=str, default='video/output/' ,help='output path')
-    parser.add_argument('-d','--device', type=str, default='cpu', choices=["cpu","gpu","trt"] ,help='running device')
+    parser.add_argument('-t', '--IfConcat', type=str, default="None", choices=["None", "Horizontal", "Vertical"], help='Whether to splice the original video with the converted video')
+    parser.add_argument('-d','--device', type=str, default='gpu', choices=["cpu","gpu","trt"] ,help='running device')
     return parser.parse_args()
 
 def check_folder(path):
@@ -45,7 +46,7 @@ class Videocap:
         self.cap = vid
         self.ret, frame = self.cap.read()
         self.cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
-        self.q = queue.Queue(maxsize=100)
+        self.q = queue.Queue(maxsize=60)
         t = threading.Thread(target=self._reader)
         t.daemon = True
         t.start()
@@ -82,7 +83,7 @@ class Cartoonizer():
     def __init__(self, arg):
         self.args = arg
         if ort.get_device() == 'GPU' and self.args.device=="gpu" :
-            self.sess_land = ort.InferenceSession(self.args.model_path, providers = ['CUDAExecutionProvider','CPUExecutionProvider',])
+            self.sess_land = ort.InferenceSession(self.args.model_path, providers = ['CUDAExecutionProvider',])
         elif ort.get_device() == 'trt':
             self.sess_land = ort.InferenceSession(self.args.model_path, providers = ['TensorrtExecutionProvider', 'CUDAExecutionProvider',])
         else:
@@ -104,7 +105,14 @@ class Cartoonizer():
         num = vid.total
         ouput_video_path = os.path.join(self.args.output, os.path.basename(self.args.input_video_path).rsplit('.', 1)[0] + f'_{self.name}.mp4')
         ouput_videoSounds_path = os.path.join(self.args.output, os.path.basename(self.args.input_video_path).rsplit('.', 1)[0] + f'_{self.name}_sounds.mp4')
-        self.video_out = cv2.VideoWriter(ouput_video_path, codec, vid.fps, (vid.ori_width, vid.ori_height))
+
+        if self.args.IfConcat == "Horizontal":
+            self.video_out = cv2.VideoWriter(ouput_video_path, cv2.VideoWriter_fourcc(*'mp4v'), vid.fps, (vid.ori_width * 2, vid.ori_height))
+        elif self.args.IfConcat == "Vertical":
+            self.video_out = cv2.VideoWriter(ouput_video_path, cv2.VideoWriter_fourcc(*'mp4v'), vid.fps, (vid.ori_width, vid.ori_height * 2))
+        else:
+            self.video_out = cv2.VideoWriter(ouput_video_path, cv2.VideoWriter_fourcc(*'mp4v'), vid.fps, (vid.ori_width, vid.ori_height))
+        # self.video_out = cv2.VideoWriter(ouput_video_path, codec, vid.fps, (vid.ori_width, vid.ori_height))
         pbar = tqdm(total=vid.total, )
         pbar.set_description(f"Running: {os.path.basename(self.args.input_video_path).rsplit('.', 1)[0] + f'_{self.name}.mp4'}")
         while num>0:
@@ -115,15 +123,19 @@ class Cartoonizer():
             frame = vid.read()
             fake_img = self.sess_land.run(None, {self.sess_land.get_inputs()[0].name: frame})[0]
             fake_img = self.post_precess(fake_img, (vid.ori_width, vid.ori_height))
+            if self.args.IfConcat == "Horizontal":
+                fake_img = np.hstack((self.post_precess(frame, (vid.ori_width, vid.ori_height)), fake_img))
+            elif self.args.IfConcat == "Vertical":
+                fake_img = np.vstack((self.post_precess(frame, (vid.ori_width, vid.ori_height)), fake_img))
             self.video_out.write(fake_img[:,:,::-1])
             pbar.update(1)
             num-=1
         pbar.close()
         self.video_out.release()
         try:
-            command = ["ffmpeg", "-loglevel", "error", "-i", self.args.input_video_path, "-y", "sound.mp3"]
+            command = ["ffmpeg", "-loglevel", "error", "-i", self.args.input_video_path, "-y", f"{os.path.join(self.args.output,'sound.mp3')}"]
             r = subprocess.check_call(command) # Get the audio of the input video (MP3)
-            command = ["ffmpeg", "-loglevel", "error", "-i", "sound.mp3", "-i", ouput_video_path, "-y", ouput_videoSounds_path]
+            command = ["ffmpeg", "-loglevel", "error", "-i", f"{os.path.join(self.args.output,'sound.mp3')}", "-i", ouput_video_path, "-y", "-c:v", "libx264", "-c:a", "copy", "-crf", "25", ouput_videoSounds_path]
             r = subprocess.check_call(command) # Merge the output video with the sound to get the final result
             return ouput_videoSounds_path
         except:
