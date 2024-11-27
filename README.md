@@ -19,6 +19,7 @@ Paper Title: A Novel Double-Tail Generative Adversarial Network for Fast Photo A
 </div>       
 
 ## 📢 Updates    
+* `2024-11-27` Disney and Trump styles updated to version 2.0.    
 * `2024-10-31` Added a new styles of AnimeGANv3: Portrait to Pixar. :jack_o_lantern:    
 * `2024-08-28` A [repo](https://github.com/TachibanaYoshino/AnimeGANv3_Portrait_Inference) more suitable for portrait style inference based on the AnimeGANv3 models has been released. Highly recommended.         
 * `2023-12-10` Added a new AnimeGANv3 model for Portrait to Oil-painting style. Its onnx is available [here](https://www.patreon.com/posts/animeganv3-s-oil-94445425?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link).     
@@ -132,17 +133,21 @@ ___
 
 | v1.9 | v2.0 |
 |:-:|:-:| 
-|<video  src="https://github.com/user-attachments/assets/9cc111e9-8a1d-4c22-b0d0-0c430aca98d5" type="video/mp4"> </video>|<video  src="https://github.com/user-attachments/assets/8d7f2be8-14d7-4447-b376-6b0f44a8b8fd" type="video/mp4"> </video>| 
+|<video  src="https://github.com/user-attachments/assets/9cc111e9-8a1d-4c22-b0d0-0c430aca98d5" type="video/mp4"> </video>|<video  src="https://github.com/user-attachments/assets/53f927cd-bf2b-4699-a02a-8e635ff0403c" type="video/mp4"> </video>| 
 ___    
-### :art: Face to USA cartoon + Disney style    
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Trump/AnimeGANv3_Trump_1pic.gif)     
-      
-<a href="https://youtu.be/vJqQQMRYKh0"><img src="https://img.shields.io/static/v1?label=YouTube&message=AnimeGANv3_Trump style v1.5 &color=gold"/></a>
-      
+### :art: Face to Trump style    
+
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Trump/Trump_output.jpg)     
+
+| v1.9 | v2.0 |
+|:-:|:-:| 
+|<video  src="https://github.com/user-attachments/assets/c20b4d99-125a-45c8-a1fe-c0c46a714b55" type="video/mp4"> </video>|<video  src="https://github.com/user-attachments/assets/6231a36d-1418-4175-adb5-c415adb8784e" type="video/mp4"> </video>| 
+         
 <details>
 <summary><strong>   more surprise</strong>&emsp;👈</summary>
-      
-![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Trump/Trump_output.jpg)      
+
+![](https://github.com/TachibanaYoshino/AnimeGANv3/blob/master/results/AnimeGANv3_Trump/AnimeGANv3_Trump_1pic.gif)   
+ 
 </details>   
 
 ___    
