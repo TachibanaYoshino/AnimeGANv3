@@ -19,6 +19,7 @@ Paper Title: A Novel Double-Tail Generative Adversarial Network for Fast Photo A
 </div>       
 
 ## 📢 Updates    
+* `2025-02-16` Released the **TensorRT**-based model conversion and inference [repo](https://github.com/TachibanaYoshino/AnimeGANv3_Portrait_Inference/tree/tensorRT).
 * `2024-12-15` Released the **rknn**-based model conversion and inference [repo](https://github.com/TachibanaYoshino/AnimeGANv3_Portrait_Inference/tree/rknn). 
 * `2024-11-27` Disney and Trump styles updated to version 2.0.    
 * `2024-10-31` Added a new styles of AnimeGANv3: Portrait to Pixar. :jack_o_lantern:    
